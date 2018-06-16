@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Kostya Gavrish](https://up.htmlacademy.ru/htmlcss/21/user/793799).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
