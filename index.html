@@ -10,12 +10,13 @@
     <header class="main-header">
       <nav class="main-navig">
        <a class="main-header-logo">
-         <img src="http://placehold.it/150x50" alt="Main-logo">
+         <img src="http://placehold.it/150x50" alt="Main-logo" id="beginning">
        </a>
        <div class="search-field">
          <input type="search" placeholder="Поиск:">
        </div>
        <ul class="add-navigation">
+<!--        за счет чего будет меняться количество(цифр) в закладок или корзин и как я могу это сделать здесь ?-->
          <li><a href="tab.html">Закладки:0</a></li>
          <li><a href="cart.html">Корзина:0</a></li>
          <li><a href="order.html">Оформить заказ</a></li>
@@ -42,7 +43,7 @@
          <li><a href="News.html">Новости</a></li>
          <li><a href="Special.html">Спецпредложения</a></li>
          <li><a href="Deliver.html">Доставка</a></li>
-         <li><a href="Contacts">Контакты</a></li>
+         <li><a href="Contacts.html">Контакты</a></li>
        </ul>
       </nav>
     </header>
@@ -50,12 +51,16 @@
      <h1 class="visually-hidden">Техномарт</h1>
       <section class="offers">
         <ul class="offers-list">
-          <li class="materials-list"><a class="materials" href="materials.html">НА ЛЮБОЙ ВКУС</a> Материалы</li>
-          <li class="instruments-list"><a class="instruments" href="instruments.html">НА ВСЕ СЛУЧАИ</a> Инструмент</li>
-          <li class="equipments-list"><a class="equipments" href="equipments.html">ДЛЯ СТРОЙКИ</a> Техника</li>
-          <li class="perforators-list"><a class="perforators" href="perforators.html">ОТКРЫТЬ КАТАЛОГ</a> ПЕРФОРАТОРЫ<br>Настоящие мужские игрушки</li>
-          <li class="sales-list"><a class="sales" href="sales.html">НА 350 ТОВАРОВ</a> Скидки 50%</li>
-          <li class="deliver-list"><a class="deliver" href="Deliver.html">БЕСПЛАТНО</a> Доставка</li>
+          <li class="materials-list">Материалы <a class="materials" href="materials.html">НА ЛЮБОЙ ВКУС</a></li>
+          <li class="instruments-list">Инструмент <a class="instruments" href="instruments.html">НА ВСЕ СЛУЧАИ</a></li>
+          <li class="equipments-list">Техника <a class="equipments" href="equipments.html">ДЛЯ СТРОЙКИ</a></li>
+          <li class="perforators-list">ПЕРФОРАТОРЫ<br>Настоящие мужские игрушки 
+          <a class="button perforators" href="perforators.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <button class="button-slider-l"><img src="slider.png" alt="slider"></button>
+            <button class="button-slider-r"><img src="slider.png" alt="slider"></button>
+          </li>
+          <li class="sales-list">Скидки 50%<a class="sales" href="sales.html">НА 350 ТОВАРОВ</a></li>
+          <li class="deliver-list">Доставка <a class="deliver" href="Deliver.html">БЕСПЛАТНО</a></li>
         </ul>
       </section>
 <!--      Во что лучше заворачивать нижний код - div или ul ?-->
@@ -65,15 +70,16 @@
         <h2 class="top-items">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
         </li>
         <li class="top-products-url">
-        <a class="all-products" href="all-products.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        <a class="button all-products" href="all-products.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </li>
       </ul>
+      <div>
       <ul class="top-products-list">
-       <ul class="specific-product">
-        <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-        <li class="name-bosch">Перфоратор BOSCH BFG 9000</li>
-        <li class="price-before">32500 P.</li>
-        <li class="price-after">25500 P.</li>
+        <ul class="specific-product">
+          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
+          <li class="name-bosch">Перфоратор BOSCH BFG 9000</li>
+          <li class="price-before">32500 P.</li>
+          <li class="price-after">25500 P.</li>
         </ul>
         <ul class="specific-product">
           <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
@@ -94,37 +100,148 @@
           <li class="price-after">12500 P.</li>
         </ul>
        </ul>
+       </div>
       </section>
       <section class="top-producers">
-        <ul class="top-producers-header">
-          <li class="top-producers-header">
-          <h2 class="top-companies">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-          </li>
-          <li class="top-producers-url">
-          <a class="all-producers" href="all-producers.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-          </li>
-        </ul>
-        <ul class="list-producers">
-          <li class="image"><img src="http://placehold.it/150x50" alt="Bosch"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="Makita"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="DeWalt"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="Intercon"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="Hitachi"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="LG"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="AEG"></li>
-          <li class="image"><img src="http://placehold.it/150x50" alt="metabo"></li>
-        </ul>
+       <div>
+          <ul class="top-producers-header">
+            <li class="top-producers-header">
+            <h2 class="top-companies">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+            </li>
+            <li class="top-producers-url">
+            <a class="button all-producers" href="all-producers.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+            </li>
+          </ul>
+       </div>
+       <div>
+          <ul class="list-producers">
+            <li class="image"><img src="http://placehold.it/150x50" alt="Bosch"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="Makita"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="DeWalt"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="Intercon"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="Hitachi"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="LG"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="AEG"></li>
+            <li class="image"><img src="http://placehold.it/150x50" alt="metabo"></li>
+          </ul>
+       </div>
       </section>
       <section>
-       <ul>
-         <li>
-         <h2 class="services">#</h2>
-         <p></p>
-         </li>
-         <li></li>
-       </ul>
+       <div class="service">
+         <h2 class="services">Сервисы</h2>
+         <p class="description">Хороший интернет-магазин отличается от плохого не только ценами!
+Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+       </div>
+       
+       <div class="services-block">
+           <ul class="services-list">
+             <li class="delivery"><button>Доставка</button></li>
+             <li class="guarantee"><button>Гарантия</button></li>
+             <li class="credit"><button>Кредит</button></li>
+           </ul>
+       </div>
+         
+       <div class="delivery-container">
+         <h2 class="delivery-header">ДОСТАВКА</h2>
+         <p class="description">Мы с удовольствием доставим ваш товар прямо
+к вашему подъезду совершенно бесплатно!
+Ведь мы неплохо заработаем,
+поднимая его на ваш этаж!
+         </p>
+       </div>
+        
+         <div class="guarantee-container">
+           <h2 class="guarantee-header">ГАРАНТИЯ</h2>
+           <p class="description">Если купленный у нас товар поломается или заискрит, 
+а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+Дом уж восстановите как-нибудь сами.
+           </p>
+         </div>
+         
+         <div class="credit-container">
+           <h2 class="credit-header">КРЕДИТ</h2>
+           <p class="description">Залезть в долговую яму стало проще! 
+Кредитные консультанты придут вам на помощь.
+           </p>
+           <a class="send-request" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+       </div>
+      </section>
+      
+      <section>
+        <div class="name-container">
+<!--                          Есть ли вообще смысл оборачивать это в div ?-->
+          <h2 class="company-name">КОМПАНИЯ «Техномарт»</h2>
+          <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="description">Мы можем доставить ваш товар в самые отдаленные точки России!
+  Техномарт работает со многими транспортными компаниями: </p>
+        </div>
+        <ul class="transport">
+          <li class="Delovue-linii">Деловые линии</li>
+          <li class="Avtotreiding">Автотрейдинг</li>
+          <li class="Zel">ЖелДорЭкспедиция</li>
+        </ul>
+        <div class="all-about-company"> 
+         <!--Можно ли вместо div просто обернуть в p-->
+          <a class="button about-company" href="#">Подробнее о компании</a>
+        </div>
+      </section>
+        
+      <section>
+       <div class="contact">
+        <h2 class="Contacts">КОНТАКТЫ</h2>
+        <p class="description">Вы можете забрать товар сами, 
+заехав в наш офис:</p>
+       </div>
+        <div>
+<!--         как сделать поп-ап для карты ?-->
+          <a class="map-popup" href="img/map2.jpg"><img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
+        </div>
+        <div>
+<!--         Поп-ап с письмом будет как отдельная ссылка или форма или как мне вообще можно её оформить здесь?-->
+          <a class="button" href="img/message">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        </div>
       </section>
     </main>
+    <footer>
+      <div class="bottom-nav">
+        <div class="first-footer">
+         <div>
+          <a class="footer-logo" href="#beginning">
+            <img src="http://placehold.it/150x50" alt="jump to beginning of page">
+          </a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+         </div>
+         <ul class="bottom-navigation footer-functions">
+           <li><a href="Company.html">Компания</a></li>
+           <li><a href="News.html">Новости</a></li>
+           <li><a href="Catalog.html">Каталог</a></li>
+           <li><a href="Deliver.html">Доставка</a></li>
+           <li><a href="Contacts.html">Контакты</a></li>
+         </ul>
+         <ul class="offer">
+           <li><a href="#">Материалы</a></li>
+           <li><a href="#">Техника</a></li>
+           <li><a href="#">Инструмент</a></li>
+           <li><a href="#">Спецпредложения</a></li>
+         </ul>
+        </div>
+        <div class="second-footer">
+          <p class="copyright">© 2010–2017 Компания «Техномарт»<br>
+Все права защищены</p>
+        <div class="footer-social">
+           <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+             <li><a class="social-button" href="#">Инстаграм</a></li>
+           </ul>
+        </div>
+          <div class="addresses">
+            <p class="back-mail">Обратная связь:<br><a class="mail" href="#">mail@htmlacademy.ru</a></p>
+            <p class="developed">Разработано —<br><a class="web-site" href="#">htmlacademy.ru</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
 
