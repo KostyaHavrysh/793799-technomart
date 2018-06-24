@@ -39,7 +39,7 @@
        <ul class="bottom-navigation">
          <li><a class="main">Главная</a></li>
          <li><a href="Company.html">Компания</a></li>
-         <li><a href="Catalog.html">каталог</a></li>
+         <li><a href="Catalog.html">Каталог</a></li>
          <li><a href="News.html">Новости</a></li>
          <li><a href="Special.html">Спецпредложения</a></li>
          <li><a href="Deliver.html">Доставка</a></li>
@@ -55,25 +55,25 @@
           <li class="instruments-list">Инструмент <a class="instruments" href="instruments.html">НА ВСЕ СЛУЧАИ</a></li>
           <li class="equipments-list">Техника <a class="equipments" href="equipments.html">ДЛЯ СТРОЙКИ</a></li>
           <li class="perforators-list">ПЕРФОРАТОРЫ<br>Настоящие мужские игрушки 
-          <a class="button perforators" href="perforators.html">ОТКРЫТЬ КАТАЛОГ</a>
-            <button class="button-slider-l"><img src="slider.png" alt="slider"></button>
-            <button class="button-slider-r"><img src="slider.png" alt="slider"></button>
+          <a class="button-perforators" href="perforators.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <button class="button-slider-l" type="button"><img src="slider.png" alt="slider"></button>
+            <button class="button-slider-l r" type="button"><img src="slider.png" alt="slider"></button>
           </li>
           <li class="sales-list">Скидки 50%<a class="sales" href="sales.html">НА 350 ТОВАРОВ</a></li>
           <li class="deliver-list">Доставка <a class="deliver" href="Deliver.html">БЕСПЛАТНО</a></li>
         </ul>
       </section>
-<!--      Во что лучше заворачивать нижний код - div или ul ?-->
       <section class="top-products">
       <ul class="top-products-header">
         <li class="top-products-header">
         <h2 class="top-items">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
         </li>
         <li class="top-products-url">
-        <a class="button all-products" href="all-products.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        <a class="button-all-products" href="all-products.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </li>
       </ul>
-      <div>
+      <div class="top-product-container">
+      <!--      Во что лучше нужно было заворачивать нижний код - div или ul (как я сделал ниже, но чувствую я что налажал здесь) ?-->
       <ul class="top-products-list">
         <ul class="specific-product">
           <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
@@ -109,7 +109,7 @@
             <h2 class="top-companies">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
             </li>
             <li class="top-producers-url">
-            <a class="button all-producers" href="all-producers.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+            <a class="button-all-producers" href="all-producers.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
             </li>
           </ul>
        </div>
@@ -135,14 +135,14 @@
        
        <div class="services-block">
            <ul class="services-list">
-             <li class="delivery"><button>Доставка</button></li>
-             <li class="guarantee"><button>Гарантия</button></li>
-             <li class="credit"><button>Кредит</button></li>
+             <li class="delivery"><button type="button">Доставка</button></li>
+             <li class="guarantee"><button type="button">Гарантия</button></li>
+             <li class="credit"><button type="button">Кредит</button></li>
            </ul>
        </div>
          
        <div class="delivery-container">
-         <h2 class="delivery-header">ДОСТАВКА</h2>
+         <h3 class="headers delivery-header">ДОСТАВКА</h2>
          <p class="description">Мы с удовольствием доставим ваш товар прямо
 к вашему подъезду совершенно бесплатно!
 Ведь мы неплохо заработаем,
@@ -151,7 +151,7 @@
        </div>
         
          <div class="guarantee-container">
-           <h2 class="guarantee-header">ГАРАНТИЯ</h2>
+           <h3 class="headers guarantee-header">ГАРАНТИЯ</h2>
            <p class="description">Если купленный у нас товар поломается или заискрит, 
 а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
 Дом уж восстановите как-нибудь сами.
@@ -159,7 +159,7 @@
          </div>
          
          <div class="credit-container">
-           <h2 class="credit-header">КРЕДИТ</h2>
+           <h3 class="headers credit-header">КРЕДИТ</h2>
            <p class="description">Залезть в долговую яму стало проще! 
 Кредитные консультанты придут вам на помощь.
            </p>
@@ -169,7 +169,6 @@
       
       <section>
         <div class="name-container">
-<!--                          Есть ли вообще смысл оборачивать это в div ?-->
           <h2 class="company-name">КОМПАНИЯ «Техномарт»</h2>
           <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p class="description">Мы можем доставить ваш товар в самые отдаленные точки России!
@@ -182,7 +181,7 @@
         </ul>
         <div class="all-about-company"> 
          <!--Можно ли вместо div просто обернуть в p-->
-          <a class="button about-company" href="#">Подробнее о компании</a>
+          <a class="button-about-company" href="#">Подробнее о компании</a>
         </div>
       </section>
         
@@ -195,6 +194,7 @@
         <div>
 <!--         как сделать поп-ап для карты ?-->
           <a class="map-popup" href="img/map2.jpg"><img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
+          <span class="modal-close">X</span>
         </div>
         <div>
 <!--         Поп-ап с письмом будет как отдельная ссылка или форма или как мне вообще можно её оформить здесь?-->
@@ -211,7 +211,7 @@
           </a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
          </div>
-         <ul class="bottom-navigation footer-functions">
+         <ul class="bottom-navigation-footer-functions">
            <li><a href="Company.html">Компания</a></li>
            <li><a href="News.html">Новости</a></li>
            <li><a href="Catalog.html">Каталог</a></li>
