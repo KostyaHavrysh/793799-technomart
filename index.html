@@ -194,10 +194,6 @@
         <p class="description">Вы можете забрать товар сами, 
 заехав в наш офис:</p>
        </div>
-       <div>
-          <a class="map-popup" href="img/map2.jpg"><img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
-          <span class="modal-close">X</span>
-        </div>
         <div>
           <a class="button" href="img/message">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </div>
@@ -243,6 +239,26 @@
         </div>
       </div>
     </footer>
+      <div class="map-popup-container">
+        <a class="map-popup" href="img/map2.jpg"><img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
+        <span class="modal-close">X</span>
+      </div>
+      
+      <form class="message-container" action="#">
+        <p class="message-popup">
+          <label for="your-name">Ваше имя:</label>
+          <input id="your-name" type="text" name="your-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="message-popup">
+          <label for="your-mail">Ваш e-mail:</label>
+          <input id="your-mail" type="text" name="your-mail" placeholder="email@example.com">
+        </p>
+        <p class="message-popup">
+          <label for="your-text">Текст письма:</label>
+          <input id="your-text" type="text" name="your-text" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">ОТПРАВИТЬ</button>
+      </form>
   </body>
 </html>
 
