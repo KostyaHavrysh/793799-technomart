@@ -16,25 +16,24 @@
          <input type="search" placeholder="Поиск:">
        </div>
        <ul class="add-navigation">
-<!--        за счет чего будет меняться количество(цифр) в закладок или корзин и как я могу это сделать здесь ?-->
          <li><a href="tab.html">Закладки:0</a></li>
          <li><a href="cart.html">Корзина:0</a></li>
          <li><a href="order.html">Оформить заказ</a></li>
        </ul>
        <div class="middle-navigation-container">
          <p class="description-site"><em>Интернет-магазин строительных материалови инструментов для ремонта</em></p>
-         <ul class="contact-navigation">
-         <li class="telefon-number">
-           +7 (812) 555-05-55
-         </li>
-         <li class="contact-inf-nav">
-           г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-         </li>
-         </ul>
-         <ul class="enter-register">
-           <li><a class="Enter" href="Enter.html">Войти</a></li>
-           <li><a class="register" href="Register.html">Регистрация</a></li>
-         </ul>
+         <div class="contact-navigation">
+           <p class="telefon-number">
+             +7 (812) 555-05-55
+           </p>
+           <p class="contact-inf-nav">
+             г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+           </p>
+         </div>
+         <div class="enter-register">
+           <a class="Enter" href="Enter.html">Войти</a>
+           <a class="register" href="Register.html">Регистрация</a>
+         </div>
        </div>
        <ul class="bottom-navigation">
          <li><a class="main">Главная</a></li>
@@ -54,66 +53,70 @@
           <li class="materials-list">Материалы <a class="materials" href="materials.html">НА ЛЮБОЙ ВКУС</a></li>
           <li class="instruments-list">Инструмент <a class="instruments" href="instruments.html">НА ВСЕ СЛУЧАИ</a></li>
           <li class="equipments-list">Техника <a class="equipments" href="equipments.html">ДЛЯ СТРОЙКИ</a></li>
-          <li class="perforators-list">ПЕРФОРАТОРЫ<br>Настоящие мужские игрушки 
+          <li class="perforators-list">
+          <h2 class="header-perforator">ПЕРФОРАТОРЫ</h2>
+          Настоящие мужские игрушки
           <a class="button-perforators" href="perforators.html">ОТКРЫТЬ КАТАЛОГ</a>
-            <button class="button-slider-l" type="button"><img src="slider.png" alt="slider"></button>
-            <button class="button-slider-l r" type="button"><img src="slider.png" alt="slider"></button>
+            <button class="button-slider-l" type="button"></button>
+            <button class="button-slider-l r" type="button"></button>
           </li>
           <li class="sales-list">Скидки 50%<a class="sales" href="sales.html">НА 350 ТОВАРОВ</a></li>
           <li class="deliver-list">Доставка <a class="deliver" href="Deliver.html">БЕСПЛАТНО</a></li>
         </ul>
       </section>
       <section class="top-products">
-      <ul class="top-products-header">
-        <li class="top-products-header">
+      <div class="top-products-header">
         <h2 class="top-items">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-        </li>
-        <li class="top-products-url">
         <a class="button-all-products" href="all-products.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
-        </li>
-      </ul>
+      </div>
+      
       <div class="top-product-container">
-      <!--      Во что лучше нужно было заворачивать нижний код - div или ul (как я сделал ниже, но чувствую я что налажал здесь) ?-->
       <ul class="top-products-list">
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 9000</li>
-          <li class="price-before">32500 P.</li>
-          <li class="price-after">25500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before">22500 P.</li>
-          <li class="price-after">15500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 6000</li>
-          <li class="price-before">30500 P.</li>
-          <li class="price-after">25500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 2000</li>
-          <li class="price-before"></li>
-          <li class="price-after">12500 P.</li>
-        </ul>
+        <li class="specific-product">
+          <article>
+          <a class="image" href="#"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 9000</h3>
+          <p class="price-before">32500 P.</p>
+          <p class="price-after">25500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image" href="#"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 3000</h3>
+          <p class="price-before">22500 P.</p>
+          <p class="price-after">15500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image" href="#"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 6000</h3>
+          <p class="price-before">30500 P.</p>
+          <p class="price-after">25500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image" href="#"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 2000</h3>
+          <p class="price-before"></p>
+          <p class="price-after">12500 P.</p>
+          </article>
+        </li>
        </ul>
        </div>
       </section>
+      
       <section class="top-producers">
-       <div>
-          <ul class="top-producers-header">
-            <li class="top-producers-header">
-            <h2 class="top-companies">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-            </li>
-            <li class="top-producers-url">
-            <a class="button-all-producers" href="all-producers.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-            </li>
-          </ul>
+       <div class="top-producers-header">
+         <h2 class="top-producers">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+         <a class="button-all-producers" href="all-producers.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
        </div>
-       <div>
+       <div class="producers-container">
           <ul class="list-producers">
             <li class="image"><img src="http://placehold.it/150x50" alt="Bosch"></li>
             <li class="image"><img src="http://placehold.it/150x50" alt="Makita"></li>
@@ -126,6 +129,7 @@
           </ul>
        </div>
       </section>
+      
       <section>
        <div class="service">
          <h2 class="services">Сервисы</h2>
@@ -141,30 +145,32 @@
            </ul>
        </div>
          
-       <div class="delivery-container">
-         <h3 class="headers delivery-header">ДОСТАВКА</h2>
+       <ul class="service-list">
+        <li class="delivery-container">
+         <h3 class="headers delivery-header">ДОСТАВКА</h3>
          <p class="description">Мы с удовольствием доставим ваш товар прямо
 к вашему подъезду совершенно бесплатно!
 Ведь мы неплохо заработаем,
 поднимая его на ваш этаж!
          </p>
-       </div>
+         </li>
         
-         <div class="guarantee-container">
-           <h3 class="headers guarantee-header">ГАРАНТИЯ</h2>
+         <li class="guarantee-container">
+           <h3 class="headers guarantee-header">ГАРАНТИЯ</h3>
            <p class="description">Если купленный у нас товар поломается или заискрит, 
 а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
 Дом уж восстановите как-нибудь сами.
            </p>
-         </div>
+         </li>
          
-         <div class="credit-container">
-           <h3 class="headers credit-header">КРЕДИТ</h2>
+         <li class="credit-container">
+           <h3 class="headers credit-header">КРЕДИТ</h3>
            <p class="description">Залезть в долговую яму стало проще! 
 Кредитные консультанты придут вам на помощь.
            </p>
            <a class="send-request" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
-       </div>
+         </li>
+       </ul>
       </section>
       
       <section>
@@ -179,10 +185,7 @@
           <li class="Avtotreiding">Автотрейдинг</li>
           <li class="Zel">ЖелДорЭкспедиция</li>
         </ul>
-        <div class="all-about-company"> 
-         <!--Можно ли вместо div просто обернуть в p-->
           <a class="button-about-company" href="#">Подробнее о компании</a>
-        </div>
       </section>
         
       <section>
@@ -191,13 +194,11 @@
         <p class="description">Вы можете забрать товар сами, 
 заехав в наш офис:</p>
        </div>
-        <div>
-<!--         как сделать поп-ап для карты ?-->
+       <div>
           <a class="map-popup" href="img/map2.jpg"><img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
           <span class="modal-close">X</span>
         </div>
         <div>
-<!--         Поп-ап с письмом будет как отдельная ссылка или форма или как мне вообще можно её оформить здесь?-->
           <a class="button" href="img/message">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </div>
       </section>
@@ -236,8 +237,8 @@
            </ul>
         </div>
           <div class="addresses">
-            <p class="back-mail">Обратная связь:<br><a class="mail" href="#">mail@htmlacademy.ru</a></p>
-            <p class="developed">Разработано —<br><a class="web-site" href="#">htmlacademy.ru</a></p>
+            <p class="back-mail">Обратная связь:<a class="mail" href="#">mail@htmlacademy.ru</a></p>
+            <p class="developed">Разработано —<a class="web-site" href="#">htmlacademy.ru</a></p>
           </div>
         </div>
       </div>

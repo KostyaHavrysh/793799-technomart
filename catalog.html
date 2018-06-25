@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Техномарт-Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-catalog.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
      <nav class="main-navig">
-       <a class="main-header-logo">
+       <a class="main-header-logo" href="index.html">
          <img src="http://placehold.it/150x50" alt="Main-logo" id="beginning">
        </a>
        <div class="search-field">
@@ -22,20 +22,22 @@
        </ul>
        <div class="middle-navigation-container">
          <p class="description-site"><em>Интернет-магазин строительных материалови инструментов для ремонта</em></p>
-       <ul class="contact-navigation">
-         <li class="telefon-number">
-           +7 (812) 555-05-55
-         </li>
-         <li class="contact-inf-nav">
-           г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-         </li>
-       </ul>
-         <ul class="entered-register-inf">
-          <li class="profile">Равшан Джамшутович 
-            <a class="exit-button" href="#"><img src="exit.html" alt="button for exit"></a></li>
-           <li class="acc-menu"><a class="my-orders" href="order.html">Мои заказы </a></li>
-           <li class="acc-menu"><a class="account" href="acc-menu.html">Личный кабинет</a></li>
-         </ul>
+        <div class="contact-navigation">
+           <p class="telefon-number">
+             +7 (812) 555-05-55
+           </p>
+           <p class="contact-inf-nav">
+             г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+           </p>
+         </div>
+         <div class="entered-register-inf">
+           <a href="#">
+             <p class="profile">Равшан Джамшутович
+             <a class="exit-button" href="#"></a></p>
+           </a>
+           <a class="my-orders" href="order.html">Мои заказы </a>
+           <a class="account" href="acc-menu.html">Личный кабинет</a>
+         </div>
        </div>
        <ul class="bottom-navigation">
          <li><a class="main" href="home.html">Главная</a></li>
@@ -50,7 +52,7 @@
   </header>
   <main class="container-catalog">
     <ul class="list-pages">
-      <li class="home"><a href="home.html"><img src="home.png" alt="home button"></a></li>
+      <li class="home"><a href="index.html"></a></li>
       <li><a href="Catalog.html">КАТАЛОГ</a></li>
       <li><a href="Insrument.html">ИНСТРУМЕНТ</a></li>
       <li><a href="Perforator.html">ПЕРФОРАТОРЫ</a></li>
@@ -126,85 +128,111 @@
             <li class="type-function"><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
           </ul>
           <div class="up-down">
-            <a class="search-up" href="#"><img src="arrow-up" alt="from top"></a>
-            <a class="search-down" href="#"><img src="arrow-down" alt="from bottom"></a>
+            <a class="search-up" href="#"></a>
+            <a class="search-down" href="#"></a>
           </div>
         </div>
         
         <div class="top-product-container">
       <ul class="top-products-list">
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before">22500 P.</li>
-          <li class="price-after">15500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 6000</li>
-          <li class="price-before">30500 P.</li>
-          <li class="price-after">25500 P.</li>
-        </ul>
-        <ul class="specific-product">
-         <div class="catalog-item">
+        <li class="specific-product">
+          <article>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 3000</h3>
+          <p class="price-before">22500 P.</p>
+          <p class="price-after">15500 P.</p>
+          </article>
+        </li>
+         
+          <li class="specific-product">
+          <article>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 6000</h3>
+          <p class="price-before">30500 P.</p>
+          <p class="price-after">25500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+           <article>
+           <div class="catalog-item">
            <div class="flag flag-new">новинка</div>
              <div class="actions">
                <a href="#" class="buy">Купить</a>
                <a href="#" class="bookmark">В закладки</a>
              </div>
-         </div>
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 2000</li>
-          <li class="price-before"></li>
-          <li class="price-after">12500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before">22500</li>
-          <li class="price-after">15500 P.</li>
-        </ul>
-        <ul class="specific-product">
+           </div>
+           <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+           <h3 class="name-bosch">Перфоратор BOSCH BFG 2000</h3>
+           <p class="price-before"></p>
+           <p class="price-after">15500 P.</p>
+           </article>
+         </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 3000</h3>
+          <p class="price-before">22500 P.</p>
+          <p class="price-after">15500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
           <div class="flag flag-new">новинка</div>
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before">30500</li>
-          <li class="price-after">25500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before"></li>
-          <li class="price-after">12500 P.</li>
-        </ul>
-        <ul class="specific-product">
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 6000</h3>
+          <p class="price-before">30500 P.</p>
+          <p class="price-after">25500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 2000</h3>
+          <p class="price-before"></p>
+          <p class="price-after">12500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
           <div class="flag flag-new">новинка</div>
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before">22500</li>
-          <li class="price-after">15500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before">30500</li>
-          <li class="price-after">25500 P.</li>
-        </ul>
-        <ul class="specific-product">
-          <li class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></li>
-          <li class="name-bosch">Перфоратор BOSCH BFG 3000</li>
-          <li class="price-before"></li>
-          <li class="price-after">12500 P.</li>
-        </ul>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 3000</h3>
+          <p class="price-before">22500 P.</p>
+          <p class="price-after">15500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 6000</h3>
+          <p class="price-before">30500 P.</p>
+          <p class="price-after">12500 P.</p>
+          </article>
+        </li>
+        
+        <li class="specific-product">
+          <article>
+          <a class="image"><img src="http://placehold.it/150x50" alt="BOSCH"></a>
+          <h3 class="name-bosch">Перфоратор BOSCH BFG 2000</h3>
+          <p class="price-before"></p>
+          <p class="price-after">12500 P.</p>
+          </article>
+        </li>
        </ul>
        </div>
        
-       <div class="list-pages">
-         <div class="page"><a href="#1">1</a></div>
-         <div class="page"><a href="#2">2</a></div>
-         <div class="page"><a href="#3">3</a></div>
-         <div class="page next-page"><a href="#">СЛЕДУЮЩАЯ</a></div>
-       </div>
+       <ol class="list-pages">
+         <li class="page"><a href="#1">1</a></li>
+         <li class="page"><a href="#2">2</a></li>
+         <li class="page"><a href="#3">3</a></li>
+         <li class="page next-page"><a href="#">СЛЕДУЮЩАЯ</a></li>
+       </ol>
       </div>
       
       <section class="few-words">
